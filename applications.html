@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialty Areas & Applications - B.J. Baas & Associates</title>
+    <style>
+        /* General Reset and Typography */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation / Header Area */
+        header {
+            padding: 40px 50px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .brand-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* Style the link inside the brand name */
+        .brand-name a {
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav li a:hover {
+            color: #000;
+        }
+
+        /* Hero Banner (Simulating the Green/Blue Cells Image) */
+        .banner {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-image: url('images/cells.jpg');
+            
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            z-index: 2;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 40px;
+            background-color: #fff;
+        }
+
+        /* Three Column Layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            gap: 40px;
+            align-items: start;
+        }
+
+        .service-column {
+            text-align: center;
+        }
+
+        .service-column h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            color: #000;
+            min-height: 40px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .service-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .service-column li {
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 900px) {
+            .services-grid {
+                grid-template-columns: 1fr; /* Stack columns on mobile/tablet */
+                gap: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-name">
+            <a href="index.html">B.J. Baas & Associates</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="commercial.html">Commercial Offerings</a></li>
+                <li><a href="technical.html">Technical Offerings</a></li>
+                <li><a href="applications.html">Areas & Applications</a></li>
+                <li><a href="about.html">Our Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Specialty Areas & Applications</h1>
+    </section>
+
+    <div class="container">
+        
+        <div class="services-grid">
+            
+            <div class="service-column">
+                <h3>Research</h3>
+                <ul>
+                    <li>Genomics Tools</li>
+                    <li>Proteomics Tools</li>
+                    <li>Next-Gen Sequencing</li>
+                    <li>Post Light Sequencing</li>
+                    <li>DNA & RNA Sample Prep</li>
+                    <li>Library Prep</li>
+                </ul>
+            </div>
+
+            <div class="service-column">
+                <h3>Translational & Applied Genomics</h3>
+                <ul>
+                    <li>Reproductive and Genetic Health</li>
+                    <li>Oncology</li>
+                    <li>Immunogenetics</li>
+                    <li>Neurology</li>
+                    <li>Cardiology</li>
+                </ul>
+            </div>
+
+            <div class="service-column">
+                <h3>Healthcare</h3>
+                <ul>
+                    <li>Companion Diagnostics</li>
+                    <li>Lab Developed Tests (LDT)</li>
+                    <li>FDA Regulated Products</li>
+                    <li>CE-IVD Products</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
