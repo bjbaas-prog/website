@@ -115,14 +115,62 @@
             list-style-type: disc;
         }
 
-        /* Footer */
+        /* Black Footer Styling */
         footer {
-            text-align: center;
-            padding: 40px;
-            font-size: 0.8rem;
-            color: #aaa;
-            letter-spacing: 1px;
+            background-color: #000; /* Black background */
+            color: #fff;            /* White text */
+            padding: 60px 20px;     /* generous padding */
+            margin-top: 60px;       /* Separation from content above */
+            font-size: 0.9rem;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between; /* Pushes content to edges */
+            align-items: center;
+            flex-wrap: wrap; /* Stacks nicely on mobile */
+            gap: 20px;
+        }
+
+        /* Footer Links Section */
+        .footer-links {
+            display: flex;
+            gap: 30px; /* Space between links */
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
             text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #aaa; /* Light grey on hover */
+            text-decoration: underline;
+        }
+
+        .copyright {
+            color: #888; /* Slightly dimmer for copyright text */
+            font-size: 0.8rem;
+        }
+
+        /* Responsive: Stack vertically on small screens */
+        @media (max-width: 600px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
         }
 
     </style>
@@ -180,7 +228,22 @@
         </ul>
     </div>
 
-  
+  <footer>
+        <div class="footer-container">
+            
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility</a>
+                <a href="#">LinkedIn</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 B.J. Baas & Associates
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 </html>
