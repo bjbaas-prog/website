@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Technical Offerings - B.J. Baas & Associates</title>
+    <style>
+        /* General Reset and Typography */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation / Header Area */
+        header {
+            padding: 40px 50px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .brand-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav li a:hover {
+            color: #000;
+        }
+
+        /* Hero Banner (Simulating the Gold/Black DNA Image) */
+        .banner {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Radial gradient simulating the glowing yellow DNA strand on black */
+            background: radial-gradient(circle at center, #ffd700 0%, #b8860b 20%, #000000 70%);
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            z-index: 2;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 0 40px;
+            background-color: #fff;
+        }
+
+        /* Three Column Layout for Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            align-items: start;
+        }
+
+        .service-column {
+            text-align: center; /* Centering the headers */
+        }
+
+        .service-column h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            color: #000;
+            min-height: 40px; /* Aligns the tops of the lists */
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .service-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center; /* Centering the list items as per style */
+        }
+
+        .service-column li {
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-name">B.J. Baas & Associates</div>
+        <nav>
+            <ul>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Commercial Offerings</a></li>
+                <li><a href="#">Technical Offerings</a></li>
+                <li><a href="#">Areas & Applications</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Core Technical Offerings</h1>
+    </section>
+
+    <div class="container">
+        
+        <div class="services-grid">
+            
+            <div class="service-column">
+                <h3>Technical Design & Documentation</h3>
+                <ul>
+                    <li>Product Design Requirements</li>
+                    <li>User Requirements</li>
+                    <li>Design History Files</li>
+                    <li>Process Design</li>
+                    <li>Regulated Manufacturability Testing Design</li>
+                    <li>Customer Suitability Testing</li>
+                </ul>
+            </div>
+
+            <div class="service-column">
+                <h3>Operational Execution & Quality Documentation</h3>
+                <ul>
+                    <li>Process Mapping</li>
+                    <li>Revenue Modeling</li>
+                    <li>Strategic Supply Chain Risk Assessment</li>
+                    <li>Scalable Process Optimization</li>
+                    <li>In/Out-Sourcing Risk Assessments</li>
+                    <li>Organizational Design</li>
+                </ul>
+            </div>
+
+            <div class="service-column">
+                <h3>Change Management</h3>
+                <ul>
+                    <li>Business Process Optimization</li>
+                    <li>Organizational Restructuring</li>
+                    <li>Employee Engagement, Retention, & Retraining</li>
+                    <li>Division/Business Unit Synergy Identification</li>
+                    <li>Merger and Acquisition Due Diligence</li>
+                    <li>Merger and Acquisition Technical & Cultural Integration</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
