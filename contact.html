@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - B.J. Baas & Associates</title>
+    <style>
+        /* General Reset and Typography */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation / Header Area */
+        header {
+            padding: 40px 50px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .brand-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* Style the link inside the brand name */
+        .brand-name a {
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav li a:hover {
+            color: #000;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 40px;
+            background-color: #f9f9f9;
+        }
+
+        /* Intro Text Styling */
+        .contact-intro {
+            margin-bottom: 40px;
+        }
+
+        .contact-intro h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .contact-intro p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        label span.sub-label {
+            font-weight: 400;
+            color: #666;
+            font-size: 0.75rem;
+            margin-left: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            background-color: #f2f2f2; /* Light grey background for inputs */
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: #333;
+            border-radius: 2px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Submit Button */
+        button[type="submit"] {
+            padding: 15px 30px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            align-self: flex-start;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #000;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 60px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .form-row {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-name">
+            <a href="index.html">B.J. Baas & Associates</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="commercial.html">Commercial Offerings</a></li>
+                <li><a href="technical.html">Technical Offerings</a></li>
+                <li><a href="applications.html">Areas & Applications</a></li>
+                <li><a href="about.html">Our Team</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div class="contact-intro">
+            <h1>We'd love to hear from you</h1>
+            <p>
+                At B.J. Baas and Associates we would love to hear from you, and understand what challenges that you and your business are facing. We strive to better understand how we can help you be successful, or be able to get you in touch with someone in our network that can.
+            </p>
+        </div>
+
+        <form action="contact.php" method="POST">
+            
+            <div class="form-group">
+                <label>Name (required)</label>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name" class="sub-label">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name" class="sub-label">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address (required)</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone (required)</label>
+                 <input type="tel" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject (required)</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message (required)</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
