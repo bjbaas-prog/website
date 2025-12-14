@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Commercial Offerings - B.J. Baas & Associates</title>
+    <style>
+        /* General Reset and Typography */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation / Header Area */
+        header {
+            padding: 40px 50px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .brand-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .brand-name a {
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav li a:hover {
+            color: #000;
+        }
+
+        /* Hero Banner (Simulating the 'Earth at Night' Image) */
+        .banner {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Linear gradient simulating the dark blue/purple 'earth lights' map */
+            background: linear-gradient(135deg, #020024 0%, #090979 35%, #000000 100%);
+            
+            /* Banner Image Settings (prevents tiling) */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            z-index: 2;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1200px; /* Slightly wider to accommodate 4 columns */
+            margin: 60px auto;
+            padding: 0 40px;
+            background-color: #fff;
+        }
+
+        /* Four Column Layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+            gap: 30px;
+            align-items: start;
+        }
+
+        .service-column {
+            text-align: center;
+        }
+
+        .service-column h3 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            color: #000;
+            min-height: 40px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .service-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .service-column li {
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr; /* 1 column on mobile */
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-name">
+            <a href="index.html">B.J. Baas & Associates</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="commercial.html">Commercial Offerings</a></li>
+                <li><a href="technical.html">Technical Offerings</a></li>
+                <li><a href="#">Areas & Applications</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Core Commercial Offerings</h1>
+    </section>
+
+    <div class="container">
+        
+        <div class="services-grid">
+            
+            <div class="service-column">
+                <h3>Market Opportunity</h3>
+                <ul>
+                    <li>Market Modelling</li>
+                    <li>Portfolio Analysis</li>
+                    <li>Competitive Analysis</li>
+                    <li>Market Segmentation</li>
+                    <li>Technology Fit Assessment</li>
+                </ul>
+            </div>
+
+            <div class="service-column">
+                <h3>Commercial Strategy</h3>
+                <ul>
+                    <li>Business Plan Development</li>
+                    <li>Revenue Modeling</li>
+                    <li>Product Strategy</li>
+                    <li>Portfolio Management</li>
+                    <li>Organizational Design</li>
+                </ul>
+            </div>
+
+            <div class="service-column">
+                <h3>Commercial Execution</h3>
+                <ul>
+                    <li>Scientific and Technical Writing</li>
+                    <li>Customer Engagement</li>
+                    <li>Demand Generation</li>
+                    <li>Sales Enablement</li>
+                    <li>Channel Strategy</li>
+                </ul>
+            </div>
+
+            <div class="service-column">
+                <h3>Market Expansion</h3>
+                <ul>
+                    <li>Product Iterations</li>
+                    <li>Product Line Extensions</li>
+                    <li>Market Penetration</li>
+                    <li>Strategic Alliances/Partnerships</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
