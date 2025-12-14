@@ -34,6 +34,12 @@
             color: #000;
         }
 
+        .brand-name a {
+            text-decoration: none; /* Removes the underline */
+            color: inherit;        /* Forces it to use the parent's color (black) */
+            cursor: pointer;       /* Ensures it still looks clickable on hover */
+        }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -183,7 +189,7 @@
 <body>
 
     <header>
-        <div class="brand-name">B.J. Baas & Associates</div>
+        <div class="brand-name"><a href="index.html">B.J. Baas & Associates</a></div>
         <nav>
             <ul>
                 <li><a href="#">Who We Are</a></li>
