@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.J. Baas & Associates</title>
+    <style>
+        /* General Reset and Typography */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            box-sizing: border-box;
+        }
+
+        /* Navigation / Header Area */
+        header {
+            padding: 40px 50px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .brand-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav li a:hover {
+            color: #000;
+        }
+
+        /* Hero Banners (Simulating the DNA/Molecular Images) */
+        .banner {
+            height: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: white;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            z-index: 2;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Simulating the DNA Blue Image */
+        #banner-who-we-are {
+            background-image: url('https://github.com/bjbaas-prog/website/blob/main/images/DnaPublic-Domain-Wikimedia.jpg');
+        }
+
+        /* Simulating the Molecular Image */
+        #banner-industry {
+            background: linear-gradient(135deg, #001133 0%, #330066 100%);
+             /* If you have the image, replace the line above with: background-image: url('your-molecular-image.jpg'); */
+        }
+
+        /* Content Blocks */
+        .content-section {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .content-section p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        /* Skills List Styling */
+        .skills-list {
+            margin-top: 30px;
+            padding-left: 20px;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+            color: #444;
+            list-style-type: disc;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-name">B.J. Baas & Associates</div>
+        <nav>
+            <ul>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Commercial Offerings</a></li>
+                <li><a href="#">Technical Offerings</a></li>
+                <li><a href="#">Areas & Applications</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner" id="banner-who-we-are">
+        <h1>Who We Are</h1>
+    </section>
+
+    <div class="content-section">
+        <p>
+            At B.J. Baas & Associates we have invested more than 15 years of experience in Biotechnology, Bio-Pharma, and Pharma. [cite: 8]
+        </p>
+        <p>
+            Our clients change the course of science and healthcare and so our dynamic team structure flexes to provide technical expertise on-demand. [cite: 9] We tailor every client engagement to ensure that we deliver highly customized results. [cite: 10]
+        </p>
+        <p>
+            Our market creation and expansion experience enables us to anticipate the changing global opportunities and leverage that experience for the continued success of our clients. [cite: 11]
+        </p>
+    </div>
+
+    <section class="banner" id="banner-industry">
+        <h1>Industry Experience</h1>
+    </section>
+
+    <div class="content-section">
+        <p>
+            We have led teams in Technology Development, Product Development, and Commercial that achieved results ranging from creation of the largest commercial sequencing facility to increased efficacy of bone marrow transplants to breaking the genomic sound barrier with the $1,000 NGS genome. [cite: 13]
+        </p>
+        <p>
+            Our dynamic team brings more than 15 years of experience with innovative companies such as Illumina and Life Technologies in the following areas: [cite: 14]
+        </p>
+        
+        <ul class="skills-list">
+            <li>Biochemistry [cite: 15]</li>
+            <li>Molecular biology [cite: 16]</li>
+            <li>Physics [cite: 17]</li>
+            <li>Operational excellence [cite: 18]</li>
+            <li>Product management, executive management, market development [cite: 19]</li>
+            <li>Quality management systems, regulatory affairs [cite: 20]</li>
+        </ul>
+    </div>
+
+    <footer>
+        Powered by Squarespace
+    </footer>
+
+</body>
+</html>
