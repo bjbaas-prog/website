@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - B.J. Baas & Associates</title>
+    <style>
+        /* General Reset and Typography */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation / Header Area */
+        header {
+            padding: 40px 50px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .brand-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #666;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav li a:hover {
+            color: #000;
+        }
+
+        /* Hero Banner (Simulating the Blue Silhouette Image) */
+        .banner {
+            height: 350px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, #6baed6 0%, #003366 100%); /* Simulating blue gradient/silhouettes */
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .banner p {
+            max-width: 700px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            margin: 0 auto;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+            background-color: #fff;
+        }
+
+        /* Founder Section Layout */
+        .founder-section {
+            display: flex;
+            flex-wrap: wrap; /* Stacks on mobile */
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .founder-info {
+            flex: 2; /* Takes up 2/3 width */
+        }
+
+        .founder-image-col {
+            flex: 1; /* Takes up 1/3 width */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Image Placeholder for the Dog */
+        .founder-img {
+            width: 100%;
+            height: auto;
+            background-color: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .founder-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Founder Text Styling */
+        .founder-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        .founder-title {
+            font-size: 0.9rem;
+            color: #888;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            display: inline-block;
+        }
+
+        .bio-text p {
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: #fff;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .founder-section {
+                flex-direction: column-reverse; /* Puts image on top or bottom depending on preference */
+            }
+            
+            .founder-image-col {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-name">B.J. Baas & Associates</div>
+        <nav>
+            <ul>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Commercial Offerings</a></li>
+                <li><a href="#">Technical Offerings</a></li>
+                <li><a href="#">Areas & Applications</a></li>
+                <li><a href="about.html">Our Team</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Dedicated Technical Experts</h1>
+        <p>
+            With the breadth of service offerings that B.J. Baas and Associates offers, we work with a large team of experts in their specific fields. Our team structure flexes depending on the needs and timelines of our clients.
+        </p>
+    </section>
+
+    <div class="container">
+        
+        <div class="founder-section">
+            <div class="founder-info">
+                <div class="founder-name">Bradley J. Baas Ph.D.</div>
+                <div class="founder-title">Founder</div>
+
+                <div class="bio-text">
+                    <p>
+                        Bradley J. Baas received his B.S. from University of Wisconsin and his Ph.D. from the University of Illinois in Biochemistry. His career has been growing in responsibility at some of the leading Biotech and Bio-Pharma companies.
+                    </p>
+                    <p>
+                        He has a deep technical and commercial understanding of industry cultivated over the last 15 years in multi-faceted roles in Research, Technology Development, Product Development, Operations, and Management.
+                    </p>
+                    <p>
+                        He built and directed one of the largest Next Generation Sequencing Labs in the world at Illumina and holds multiple patents with regards to NGS Library Preparation and Nanopore sequencing.
+                    </p>
+                    <p>
+                        He now applies his expertise to guiding his clients to build the tools and transformational technologies of the future.
+                    </p>
+                    <p>
+                        Bradley is also an animal lover, who encourages the team to bring their animals to the office and experience a well-rounded and reduced-stress work environment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="founder-image-col">
+                <div class="founder-img">
+                    <div style="background-color: #333; height: 300px; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; padding: 20px;">
+                        [Insert Photo of Dog on Tiled Floor Here]
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
